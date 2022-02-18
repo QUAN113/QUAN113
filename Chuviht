@@ -1,0 +1,21 @@
+import java.util.*;
+ class Chuvi
+ {
+   public static void main(String[] args) {
+
+    double xA,cv;  
+
+    Scanner scanner = new Scanner(System.in);
+
+
+    xA = scanner.nextDouble();
+
+    
+
+    cv=xA*2*3.14159;
+    
+System.out.println("The area for the circle of radius "+xA+" is "+cv);
+}
+
+
+ }
