@@ -14,7 +14,7 @@ import java.util.*;
 
     cv=xA*2*3.14159;
     
-System.out.println("The area for the circle of radius "+xA+" is "+cv);
+System.out.println("The diameter for the circle of radius "+xA+" is "+cv);
 }
 
 
