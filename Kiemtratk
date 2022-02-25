@@ -1,0 +1,20 @@
+import java.util.Scanner;
+ public class kiemtratk { 
+   public static void main(String[] args) { 
+     boolean flag;
+      Scanner sc = new Scanner(System.in); 
+      do { String isbnPattern = "HuyHoang";
+       System.out.print("nhap ten dn ");
+       String input = sc.next(); 
+       flag = input.matches(isbnPattern); 
+       if (!flag) System.out.println("Invalid data!"); } while (!flag);
+ System.out.println("Valid data");
+       boolean flag1;
+      Scanner sc1 = new Scanner(System.in); 
+      do { String isbnPattern = "2021";
+       System.out.print("nhap mk ");
+       String input = sc1.next(); 
+       flag1 = input.matches(isbnPattern); 
+       if (!flag1) System.out.println("Invalid data!"); } while (!flag);
+ System.out.println("Valid data"); 
+  } }
