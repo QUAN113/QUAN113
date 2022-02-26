@@ -1,0 +1,41 @@
+import java.util.*;
+
+import java.util.Scanner;
+
+class Daytoantru {
+
+    public static void main(String[] args) {
+
+        int n,a,b,c;
+      String yc;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Bạn muon may lan kiem tra số: ");
+
+        n = scanner.nextInt();
+
+        int counter;
+
+        Random rnum = new Random();
+
+        for (counter = 1; counter <= n; counter++) {
+          a=rnum.nextInt(200);
+          b=a-rnum.nextInt(a);
+          c=a-b;
+          boolean flag1;
+      Scanner sc1 = new Scanner(System.in); 
+      System.out.println(a + "-" + b + "=?");
+        yc=String.valueOf(c);
+       
+       System.out.print("nhập kết quả ");
+       String input = sc1.next(); 
+       flag1 = input.matches(yc); 
+       if (!flag1) System.out.println("Sai!"); 
+       else
+ {System.out.println("Đúng");}
+            System.out.println(a + "-" + b + "=" + yc);
+        }
+
+    }
+
+}
