@@ -1,0 +1,33 @@
+import java.util.Scanner;
+import java.util.Random;
+ public class Hamsinhmang{ 
+     public static Scanner scanner = new Scanner(System.in);  
+     public static void nhap() {   
+         // TODO Auto-generated method stub   
+           System.out.print("Nhập số phần tử của mảng: ");   
+             int n = scanner.nextInt();   
+               // khởi tạo mảng arr   
+                 int[] arr = new int[n];   
+                 
+              for (int i = 0; i < n; i++) {      
+             
+              Random rand = new Random(); 
+              arr[i]= rand.nextInt(100)+1;
+               }
+                  System.out.print("Các phần tử của mảng: ");     
+                   show(arr);
+                   tong(arr);  } 
+                  public static void show(int[] arr) {    
+              for (int i = 0; i < arr.length; i++) {   
+               System.out.print(arr[i] + " ");   
+                              }    }   
+           public static void tong(int[] arr) {  
+             int s=0;  
+         for (int i = 0; i < arr.length; i++) {   
+               s = s + arr[i] ;   
+                           }  
+             System.out.print("tong mảng là " + s); 
+                             }   
+                  public static void main(String[] args) {  
+                     nhap();
+                         }}
